@@ -21,6 +21,7 @@ import threading
 from typing import List
 from functools import reduce
 from statistics import stdev
+from xml.etree.ElementTree import indent
 
 from src.utils.memory import get_memory
 from src.utils.schema import Trade, WindowAnalytics
@@ -37,7 +38,7 @@ class AnalyticsWorker:
     Memory instance for recent trades and calculates market statistics.
     """
 
-    def __init__(self, symbol: str, window_size: int = 5) -> None:
+    def __init__(self, symbol: str, window_size: int = 30) -> None:
         """
         Initialize the analytics worker for a specific trading symbol.
 
@@ -169,4 +170,4 @@ class AnalyticsWorker:
         analytics.activity.trades_per_sec = round(analytics.activity.total_trades / time_span_sec, 3)
         analytics.activity.buy_sell_ratio = round(analytics.activity.buy_trades / analytics.activity.total_trades, 3)
 
-        logger.info(analytics.model_dump(exclude={"prices", "last_trade_time", "first_trade_time"}))
+        logger.info(analytics.model_dump_json(exclude={"prices", "last_trade_time", "first_trade_time"}, indent=2))
