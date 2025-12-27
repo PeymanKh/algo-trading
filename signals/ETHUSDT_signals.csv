@@ -1,0 +1,75 @@
+timestamp,symbol,signal,price,reason
+1766866096613,ETHUSDT,HOLD,2932.12,Not enough data for long MA (30 required)
+1766866096613,ETHUSDT,HOLD,2932.12,Not enough data for long Volatility Breakout (20 required)
+1766866125798,ETHUSDT,HOLD,2932.12,Not enough data for long MA (30 required)
+1766866125798,ETHUSDT,HOLD,2932.12,Not enough data for long Volatility Breakout (20 required)
+1766866155999,ETHUSDT,HOLD,2932.53,Not enough data for long MA (30 required)
+1766866155999,ETHUSDT,HOLD,2932.53,Not enough data for long Volatility Breakout (20 required)
+1766866186449,ETHUSDT,HOLD,2932.52,Not enough data for long MA (30 required)
+1766866186449,ETHUSDT,HOLD,2932.52,Not enough data for long Volatility Breakout (20 required)
+1766866217116,ETHUSDT,HOLD,2931.84,Not enough data for long MA (30 required)
+1766866217116,ETHUSDT,HOLD,2931.84,Not enough data for long Volatility Breakout (20 required)
+1766866244501,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866244501,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866277479,ETHUSDT,HOLD,2931.86,Not enough data for long MA (30 required)
+1766866277479,ETHUSDT,HOLD,2931.86,Not enough data for long Volatility Breakout (20 required)
+1766866306171,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866306171,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866336586,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866336586,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866364907,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866364907,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866396804,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866396804,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866424630,ETHUSDT,HOLD,2931.85,Not enough data for long MA (30 required)
+1766866424630,ETHUSDT,HOLD,2931.85,Not enough data for long Volatility Breakout (20 required)
+1766866457212,ETHUSDT,HOLD,2932.49,Not enough data for long MA (30 required)
+1766866457212,ETHUSDT,HOLD,2932.49,Not enough data for long Volatility Breakout (20 required)
+1766866485450,ETHUSDT,HOLD,2932.5,Not enough data for long MA (30 required)
+1766866485450,ETHUSDT,HOLD,2932.5,Not enough data for long Volatility Breakout (20 required)
+1766866517627,ETHUSDT,HOLD,2934.0,Not enough data for long MA (30 required)
+1766866517627,ETHUSDT,HOLD,2934.0,Not enough data for long Volatility Breakout (20 required)
+1766866546523,ETHUSDT,HOLD,2932.5,Not enough data for long MA (30 required)
+1766866546523,ETHUSDT,HOLD,2932.5,Not enough data for long Volatility Breakout (20 required)
+1766866577029,ETHUSDT,HOLD,2932.25,Not enough data for long MA (30 required)
+1766866577029,ETHUSDT,HOLD,2932.25,Not enough data for long Volatility Breakout (20 required)
+1766866607723,ETHUSDT,HOLD,2932.26,Not enough data for long MA (30 required)
+1766866607723,ETHUSDT,HOLD,2932.26,Not enough data for long Volatility Breakout (20 required)
+1766866637490,ETHUSDT,HOLD,2932.26,Not enough data for long MA (30 required)
+1766866637490,ETHUSDT,HOLD,2932.26,Not enough data for long Volatility Breakout (20 required)
+1766866667033,ETHUSDT,HOLD,2932.26,Not enough data for long MA (30 required)
+1766866667033,ETHUSDT,HOLD,2932.26,Building volatility history
+1766866695467,ETHUSDT,HOLD,2932.26,Not enough data for long MA (30 required)
+1766866695467,ETHUSDT,HOLD,2932.26,"Normal volatility (current=0.50, avg=0.50, ratio=1.00x)"
+1766866727935,ETHUSDT,HOLD,2932.85,Not enough data for long MA (30 required)
+1766866727935,ETHUSDT,HOLD,2932.85,"Normal volatility (current=0.51, avg=0.50, ratio=1.02x)"
+1766866754489,ETHUSDT,HOLD,2931.12,Not enough data for long MA (30 required)
+1766866754489,ETHUSDT,HOLD,2931.12,"Normal volatility (current=0.57, avg=0.52, ratio=1.10x)"
+1766866788024,ETHUSDT,HOLD,2931.12,Not enough data for long MA (30 required)
+1766866788024,ETHUSDT,HOLD,2931.12,"Normal volatility (current=0.61, avg=0.54, ratio=1.14x)"
+1766866817295,ETHUSDT,HOLD,2931.12,Not enough data for long MA (30 required)
+1766866817295,ETHUSDT,HOLD,2931.12,"Normal volatility (current=0.65, avg=0.56, ratio=1.17x)"
+1766866847740,ETHUSDT,HOLD,2931.13,Not enough data for long MA (30 required)
+1766866847740,ETHUSDT,HOLD,2931.13,"Normal volatility (current=0.69, avg=0.58, ratio=1.19x)"
+1766866877285,ETHUSDT,HOLD,2931.12,Not enough data for long MA (30 required)
+1766866877285,ETHUSDT,HOLD,2931.12,"Normal volatility (current=0.72, avg=0.59, ratio=1.21x)"
+1766866905404,ETHUSDT,HOLD,2931.0,Not enough data for long MA (30 required)
+1766866905404,ETHUSDT,HOLD,2931.0,"Normal volatility (current=0.75, avg=0.61, ratio=1.23x)"
+1766866935756,ETHUSDT,HOLD,2931.01,Not enough data for long MA (30 required)
+1766866935756,ETHUSDT,HOLD,2931.01,"Normal volatility (current=0.78, avg=0.63, ratio=1.25x)"
+1766866968014,ETHUSDT,HOLD,2931.25,First MA calculation
+1766866968014,ETHUSDT,HOLD,2931.25,"Normal volatility (current=0.80, avg=0.64, ratio=1.24x)"
+1766866996326,ETHUSDT,HOLD,2931.25,"No crossover (short=2931.30, long=2931.92)"
+1766866996326,ETHUSDT,HOLD,2931.25,"Normal volatility (current=0.81, avg=0.66, ratio=1.23x)"
+1766867027771,ETHUSDT,HOLD,2931.29,"No crossover (short=2931.14, long=2931.90)"
+1766867027771,ETHUSDT,HOLD,2931.29,"Normal volatility (current=0.82, avg=0.67, ratio=1.23x)"
+1766867055618,ETHUSDT,HOLD,2931.29,"No crossover (short=2931.16, long=2931.86)"
+1766867055618,ETHUSDT,HOLD,2931.29,"Normal volatility (current=0.82, avg=0.68, ratio=1.20x)"
+1766867086375,ETHUSDT,HOLD,2931.38,"No crossover (short=2931.18, long=2931.82)"
+1766867086375,ETHUSDT,HOLD,2931.38,"Normal volatility (current=0.80, avg=0.69, ratio=1.17x)"
+1766867114516,ETHUSDT,HOLD,2932.26,"No crossover (short=2931.30, long=2931.83)"
+1766867114516,ETHUSDT,HOLD,2932.26,"Normal volatility (current=0.62, avg=0.68, ratio=0.90x)"
+1766867148130,ETHUSDT,HOLD,2931.98,"No crossover (short=2931.38, long=2931.84)"
+1766867148130,ETHUSDT,HOLD,2931.98,"Normal volatility (current=0.59, avg=0.68, ratio=0.87x)"
+1766867177856,ETHUSDT,HOLD,2931.98,"No crossover (short=2931.47, long=2931.84)"
+1766867177856,ETHUSDT,HOLD,2931.98,"Normal volatility (current=0.58, avg=0.67, ratio=0.86x)"

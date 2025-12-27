@@ -13,6 +13,11 @@ It subscribes to Binane WebSocket, saves trades stream to a custom thread-safe i
 │    │    ├── logging_config.py
 │    │    └── sys_config.py
 │    │
+│    ├── strategies
+│    │    ├── base_strategy.py
+│    │    ├── ma_crossover.py
+│    │    └── volatility_strategy.py
+│    │
 │    ├── utils
 │    │    ├── analytics.py
 │    │    ├── memory.py
@@ -27,6 +32,9 @@ It subscribes to Binane WebSocket, saves trades stream to a custom thread-safe i
 ```
 - [logging_config.py](src/configs/logging_config.py): Logging setup for the application.
 - [sys_config.py](src/configs/sys_config.py): Application configurations implemented using [pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/). It includes desired symbols, Binance WebSocket URL, and other necessary configurations.
+- [base.py](src/strategies/base_strategy.py): Defines `BaseStrategy` abstract class which is an abstract implementation for all trading strategies. Handles signal generation, CSV logging, and basic performance statistics.
+- [ma_crossover.py](src/strategies/ma_crossover.py): Implements `MAStrategy` class for moving average crossover trading strategy. Generates BUY signals when short-term MA crosses above long-term MA, and SELL signals on bearish crossovers.
+- [volatility_breakout.py](src/strategies/volatility_breakout.py): Implements `VolatilityStrategy` class for volatility breakout trading. Detects price volatility spikes and generates signals based on the price direction during high volatility periods.
 - [analytics.py](src/utils/analytics.py): Implements `AnalyticsWorker` class which is a background worker for periodic analysis of trade data. This class uses functional programming for efficient CPU-bound analysis.
 - [memory.py](src/utils/memory.py): Implements `Memory` class which is a thread-safe in-memory data structure for storing and accessing trade data. This class uses `threading.Lock()` for thread-safe reads and writes, `collections.deque` to avoid infinity memory growth, and exposes a single instance of `Memory` class to other modules in the application using singleton design pattern.
 - [schema.py](src/utils/schema.py): Defines `Trade` data model which represents a single trade event from Binance WebSocket and `WindowAnalytics` which represents the analysis of a single rolling window of trade data.

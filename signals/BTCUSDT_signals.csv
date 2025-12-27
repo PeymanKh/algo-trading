@@ -1,0 +1,75 @@
+timestamp,symbol,signal,price,reason
+1766866097386,BTCUSDT,HOLD,87595.21,Not enough data for long MA (30 required)
+1766866097386,BTCUSDT,HOLD,87595.21,Not enough data for long Volatility Breakout (20 required)
+1766866127397,BTCUSDT,HOLD,87595.21,Not enough data for long MA (30 required)
+1766866127397,BTCUSDT,HOLD,87595.21,Not enough data for long Volatility Breakout (20 required)
+1766866156533,BTCUSDT,HOLD,87600.31,Not enough data for long MA (30 required)
+1766866156533,BTCUSDT,HOLD,87600.31,Not enough data for long Volatility Breakout (20 required)
+1766866186978,BTCUSDT,HOLD,87600.33,Not enough data for long MA (30 required)
+1766866186978,BTCUSDT,HOLD,87600.33,Not enough data for long Volatility Breakout (20 required)
+1766866215711,BTCUSDT,HOLD,87600.33,Not enough data for long MA (30 required)
+1766866215711,BTCUSDT,HOLD,87600.33,Not enough data for long Volatility Breakout (20 required)
+1766866247013,BTCUSDT,HOLD,87600.33,Not enough data for long MA (30 required)
+1766866247013,BTCUSDT,HOLD,87600.33,Not enough data for long Volatility Breakout (20 required)
+1766866277116,BTCUSDT,HOLD,87600.0,Not enough data for long MA (30 required)
+1766866277116,BTCUSDT,HOLD,87600.0,Not enough data for long Volatility Breakout (20 required)
+1766866307497,BTCUSDT,HOLD,87588.34,Not enough data for long MA (30 required)
+1766866307497,BTCUSDT,HOLD,87588.34,Not enough data for long Volatility Breakout (20 required)
+1766866337159,BTCUSDT,HOLD,87588.33,Not enough data for long MA (30 required)
+1766866337159,BTCUSDT,HOLD,87588.33,Not enough data for long Volatility Breakout (20 required)
+1766866367661,BTCUSDT,HOLD,87588.33,Not enough data for long MA (30 required)
+1766866367661,BTCUSDT,HOLD,87588.33,Not enough data for long Volatility Breakout (20 required)
+1766866397690,BTCUSDT,HOLD,87588.34,Not enough data for long MA (30 required)
+1766866397690,BTCUSDT,HOLD,87588.34,Not enough data for long Volatility Breakout (20 required)
+1766866426988,BTCUSDT,HOLD,87588.34,Not enough data for long MA (30 required)
+1766866426988,BTCUSDT,HOLD,87588.34,Not enough data for long Volatility Breakout (20 required)
+1766866457597,BTCUSDT,HOLD,87588.33,Not enough data for long MA (30 required)
+1766866457597,BTCUSDT,HOLD,87588.33,Not enough data for long Volatility Breakout (20 required)
+1766866487687,BTCUSDT,HOLD,87588.34,Not enough data for long MA (30 required)
+1766866487687,BTCUSDT,HOLD,87588.34,Not enough data for long Volatility Breakout (20 required)
+1766866517380,BTCUSDT,HOLD,87590.46,Not enough data for long MA (30 required)
+1766866517380,BTCUSDT,HOLD,87590.46,Not enough data for long Volatility Breakout (20 required)
+1766866547427,BTCUSDT,HOLD,87590.46,Not enough data for long MA (30 required)
+1766866547427,BTCUSDT,HOLD,87590.46,Not enough data for long Volatility Breakout (20 required)
+1766866577097,BTCUSDT,HOLD,87590.46,Not enough data for long MA (30 required)
+1766866577097,BTCUSDT,HOLD,87590.46,Not enough data for long Volatility Breakout (20 required)
+1766866607140,BTCUSDT,HOLD,87590.45,Not enough data for long MA (30 required)
+1766866607140,BTCUSDT,HOLD,87590.45,Not enough data for long Volatility Breakout (20 required)
+1766866637787,BTCUSDT,HOLD,87590.45,Not enough data for long MA (30 required)
+1766866637787,BTCUSDT,HOLD,87590.45,Not enough data for long Volatility Breakout (20 required)
+1766866667030,BTCUSDT,HOLD,87590.46,Not enough data for long MA (30 required)
+1766866667030,BTCUSDT,HOLD,87590.46,Building volatility history
+1766866697596,BTCUSDT,HOLD,87590.45,Not enough data for long MA (30 required)
+1766866697596,BTCUSDT,HOLD,87590.45,"Normal volatility (current=4.91, avg=4.92, ratio=1.00x)"
+1766866727014,BTCUSDT,HOLD,87590.46,Not enough data for long MA (30 required)
+1766866727014,BTCUSDT,HOLD,87590.46,"Normal volatility (current=4.89, avg=4.91, ratio=1.00x)"
+1766866757660,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866757660,BTCUSDT,HOLD,87572.01,"Normal volatility (current=6.30, avg=5.26, ratio=1.20x)"
+1766866787371,BTCUSDT,HOLD,87572.0,Not enough data for long MA (30 required)
+1766866787371,BTCUSDT,HOLD,87572.0,"Normal volatility (current=7.16, avg=5.64, ratio=1.27x)"
+1766866816823,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866816823,BTCUSDT,HOLD,87572.01,"Normal volatility (current=7.65, avg=5.97, ratio=1.28x)"
+1766866848067,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866848067,BTCUSDT,HOLD,87572.01,"Normal volatility (current=7.85, avg=6.24, ratio=1.26x)"
+1766866877970,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866877970,BTCUSDT,HOLD,87572.01,"Normal volatility (current=7.81, avg=6.44, ratio=1.21x)"
+1766866907033,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866907033,BTCUSDT,HOLD,87572.01,"Normal volatility (current=8.30, avg=6.64, ratio=1.25x)"
+1766866937892,BTCUSDT,HOLD,87572.01,Not enough data for long MA (30 required)
+1766866937892,BTCUSDT,HOLD,87572.01,"Normal volatility (current=8.67, avg=6.85, ratio=1.27x)"
+1766866968069,BTCUSDT,HOLD,87560.0,First MA calculation
+1766866968069,BTCUSDT,HOLD,87560.0,"Normal volatility (current=10.04, avg=7.14, ratio=1.41x)"
+1766866997980,BTCUSDT,HOLD,87560.0,"No crossover (short=87571.45, long=87585.42)"
+1766866997980,BTCUSDT,HOLD,87560.0,"Normal volatility (current=11.06, avg=7.46, ratio=1.48x)"
+1766867028090,BTCUSDT,HOLD,87572.0,"No crossover (short=87569.61, long=87584.65)"
+1766867028090,BTCUSDT,HOLD,87572.0,"Normal volatility (current=11.06, avg=7.74, ratio=1.43x)"
+1766867057785,BTCUSDT,HOLD,87572.01,"No crossover (short=87569.61, long=87583.70)"
+1766867057785,BTCUSDT,HOLD,87572.01,"Normal volatility (current=11.00, avg=7.97, ratio=1.38x)"
+1766867088169,BTCUSDT,HOLD,87572.0,"No crossover (short=87569.61, long=87582.76)"
+1766867088169,BTCUSDT,HOLD,87572.0,"Normal volatility (current=10.88, avg=8.17, ratio=1.33x)"
+1766867118183,BTCUSDT,HOLD,87583.78,"No crossover (short=87570.78, long=87582.21)"
+1766867118183,BTCUSDT,HOLD,87583.78,"Normal volatility (current=10.58, avg=8.32, ratio=1.27x)"
+1766867147634,BTCUSDT,HOLD,87585.44,"No crossover (short=87572.13, long=87581.71)"
+1766867147634,BTCUSDT,HOLD,87585.44,"Normal volatility (current=10.32, avg=8.44, ratio=1.22x)"
+1766867177865,BTCUSDT,HOLD,87585.43,"No crossover (short=87573.47, long=87581.22)"
+1766867177865,BTCUSDT,HOLD,87585.43,"Normal volatility (current=10.05, avg=8.52, ratio=1.18x)"

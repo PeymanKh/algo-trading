@@ -1,8 +1,8 @@
 """
 Analytics worker
 
-This module implements a background worker class that periodically reads from shared Memory
-and calculates trading statistics using thread-based concurrency.
+This module implements a background worker class that periodically reads from shared Memory,
+ calculates trading statistics using thread-based concurrency, and executes trading strategies.
 
 Features:
     - Thread-safe concurrency
@@ -10,6 +10,7 @@ Features:
     - Price metrics (OHLC, range, standard deviation, change percentage)
     - Volume metrics (base and quote)
     - Activity metrics (total trades, buy/sell trades, trades per second)
+    - Trading strategy execution (MA Crossover, Volatility Breakout)
 
 Author: Peyman Khodabandehlouei
 Last Update: 27-12-2025
@@ -21,10 +22,10 @@ import threading
 from typing import List
 from functools import reduce
 from statistics import stdev
-from xml.etree.ElementTree import indent
 
 from src.utils.memory import get_memory
 from src.utils.schema import Trade, WindowAnalytics
+from src.strategies import MAStrategy, VolatilityStrategy
 
 # Logger
 logger = logging.getLogger(__name__)
@@ -60,6 +61,10 @@ class AnalyticsWorker:
         self.__running = False
         self.__window_size = window_size
         self.__memory = get_memory()
+        self.__strategies = [
+            MAStrategy(symbol=symbol, short_window=10, long_window=30),
+            VolatilityStrategy(symbol=symbol, window=20, threshold_multiplier=2.0)
+        ]
 
     def start(self) -> None:
         """
@@ -81,9 +86,9 @@ class AnalyticsWorker:
         """
         Main worker loop.
 
-        Continuously retrieves trades from the last N seconds (window_size) from
-        shared memory, performs comprehensive analysis, and sleeps before the next
-        iteration.
+        Continuously retrieves trades from the last N seconds from shared memory,
+        performs comprehensive analysis, generate sigal, and sleeps before the
+        next iteration.
 
         Note:
             This is a private method and should not be called directly.
@@ -95,8 +100,12 @@ class AnalyticsWorker:
                     self.__symbol, self.__window_size
                 )
 
-                # Perform analysis
-                self._analyze_trades(trades)
+                # Execute analysis
+                analytics = self._analyze_trades(trades)
+
+                # Execute strategies
+                if analytics is not None:
+                    self._execute_strategies(analytics)
 
                 # Wait before next iteration
                 time.sleep(self.__window_size)
@@ -107,7 +116,7 @@ class AnalyticsWorker:
                 )
                 time.sleep(self.__window_size)
 
-    def _analyze_trades(self, trades: List[Trade]) -> None:
+    def _analyze_trades(self, trades: List[Trade]) -> WindowAnalytics:
         """
         Perform market analysis on a list of trades. To enhance efficiency of this method,
         functional programming method has been used to overcome multiple Trade list iterations.
@@ -123,7 +132,7 @@ class AnalyticsWorker:
         """
         # Overcome crash
         if not trades:
-            return
+            return None
 
         def _reduce_trades(analysis: WindowAnalytics, trade: Trade) -> WindowAnalytics:
             """Pure function to reduce a list of trades into a WindowAnalytics object."""
@@ -189,3 +198,41 @@ class AnalyticsWorker:
                 exclude={"prices", "last_trade_time", "first_trade_time"}, indent=2
             )
         )
+
+        return analytics
+
+
+    def _execute_strategies(self, analytics: WindowAnalytics) -> None:
+        """
+        Execute all trading strategies with the calculated analytics.
+
+        This method feeds the WindowAnalytics to each strategy, which then:
+            1. Generates a trading signal (BUY/SELL/HOLD)
+            2. Logs the signal to CSV file
+            3. Updates internal statistics
+
+        Args:
+            analytics (WindowAnalytics): Market analytics for the current window
+        """
+        for strategy in self.__strategies:
+            try:
+                strategy.update(analytics)
+            except Exception as e:
+                logger.error(
+                    f"Error executing {strategy.__class__.__name__} for {self.__symbol}: {e}",
+                    exc_info=True
+                )
+
+    def get_strategy_stats(self) -> dict:
+        """
+        Get performance statistics for all strategies.
+
+        Returns:
+            dict: Dictionary with strategy names as keys and their stats as values
+        """
+        stats = {}
+        for strategy in self.__strategies:
+            strategy_name = strategy.__class__.__name__
+            stats[strategy_name] = strategy.get_stats()
+        return stats
+

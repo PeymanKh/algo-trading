@@ -1,0 +1,75 @@
+timestamp,symbol,signal,price,reason
+1766866096116,SOLUSDT,HOLD,123.63,Not enough data for long MA (30 required)
+1766866096116,SOLUSDT,HOLD,123.63,Not enough data for long Volatility Breakout (20 required)
+1766866126676,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866126676,SOLUSDT,HOLD,123.62,Not enough data for long Volatility Breakout (20 required)
+1766866157177,SOLUSDT,HOLD,123.65,Not enough data for long MA (30 required)
+1766866157177,SOLUSDT,HOLD,123.65,Not enough data for long Volatility Breakout (20 required)
+1766866186149,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866186149,SOLUSDT,HOLD,123.62,Not enough data for long Volatility Breakout (20 required)
+1766866217146,SOLUSDT,HOLD,123.65,Not enough data for long MA (30 required)
+1766866217146,SOLUSDT,HOLD,123.65,Not enough data for long Volatility Breakout (20 required)
+1766866245688,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866245688,SOLUSDT,HOLD,123.62,Not enough data for long Volatility Breakout (20 required)
+1766866277549,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866277549,SOLUSDT,HOLD,123.62,Not enough data for long Volatility Breakout (20 required)
+1766866306675,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866306675,SOLUSDT,HOLD,123.62,Not enough data for long Volatility Breakout (20 required)
+1766866336484,SOLUSDT,HOLD,123.57,Not enough data for long MA (30 required)
+1766866336484,SOLUSDT,HOLD,123.57,Not enough data for long Volatility Breakout (20 required)
+1766866367151,SOLUSDT,HOLD,123.6,Not enough data for long MA (30 required)
+1766866367151,SOLUSDT,HOLD,123.6,Not enough data for long Volatility Breakout (20 required)
+1766866396827,SOLUSDT,HOLD,123.63,Not enough data for long MA (30 required)
+1766866396827,SOLUSDT,HOLD,123.63,Not enough data for long Volatility Breakout (20 required)
+1766866427527,SOLUSDT,HOLD,123.67,Not enough data for long MA (30 required)
+1766866427527,SOLUSDT,HOLD,123.67,Not enough data for long Volatility Breakout (20 required)
+1766866452233,SOLUSDT,HOLD,123.68,Not enough data for long MA (30 required)
+1766866452233,SOLUSDT,HOLD,123.68,Not enough data for long Volatility Breakout (20 required)
+1766866487272,SOLUSDT,HOLD,123.66,Not enough data for long MA (30 required)
+1766866487272,SOLUSDT,HOLD,123.66,Not enough data for long Volatility Breakout (20 required)
+1766866516511,SOLUSDT,HOLD,123.73,Not enough data for long MA (30 required)
+1766866516511,SOLUSDT,HOLD,123.73,Not enough data for long Volatility Breakout (20 required)
+1766866546678,SOLUSDT,HOLD,123.71,Not enough data for long MA (30 required)
+1766866546678,SOLUSDT,HOLD,123.71,Not enough data for long Volatility Breakout (20 required)
+1766866576544,SOLUSDT,HOLD,123.71,Not enough data for long MA (30 required)
+1766866576544,SOLUSDT,HOLD,123.71,Not enough data for long Volatility Breakout (20 required)
+1766866605447,SOLUSDT,HOLD,123.72,Not enough data for long MA (30 required)
+1766866605447,SOLUSDT,HOLD,123.72,Not enough data for long Volatility Breakout (20 required)
+1766866637071,SOLUSDT,HOLD,123.71,Not enough data for long MA (30 required)
+1766866637071,SOLUSDT,HOLD,123.71,Not enough data for long Volatility Breakout (20 required)
+1766866665928,SOLUSDT,HOLD,123.72,Not enough data for long MA (30 required)
+1766866665928,SOLUSDT,HOLD,123.72,Building volatility history
+1766866697581,SOLUSDT,HOLD,123.8,Not enough data for long MA (30 required)
+1766866697581,SOLUSDT,HOLD,123.8,"Normal volatility (current=0.06, avg=0.05, ratio=1.09x)"
+1766866726642,SOLUSDT,HOLD,123.75,Not enough data for long MA (30 required)
+1766866726642,SOLUSDT,HOLD,123.75,"Normal volatility (current=0.06, avg=0.05, ratio=1.08x)"
+1766866757098,SOLUSDT,HOLD,123.6,Not enough data for long MA (30 required)
+1766866757098,SOLUSDT,HOLD,123.6,"Normal volatility (current=0.06, avg=0.06, ratio=1.09x)"
+1766866784682,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866784682,SOLUSDT,HOLD,123.62,"Normal volatility (current=0.06, avg=0.06, ratio=1.07x)"
+1766866812285,SOLUSDT,HOLD,123.62,Not enough data for long MA (30 required)
+1766866812285,SOLUSDT,HOLD,123.62,"Normal volatility (current=0.06, avg=0.06, ratio=1.07x)"
+1766866845784,SOLUSDT,HOLD,123.64,Not enough data for long MA (30 required)
+1766866845784,SOLUSDT,HOLD,123.64,"Normal volatility (current=0.06, avg=0.06, ratio=1.05x)"
+1766866877649,SOLUSDT,HOLD,123.63,Not enough data for long MA (30 required)
+1766866877649,SOLUSDT,HOLD,123.63,"Normal volatility (current=0.06, avg=0.06, ratio=1.04x)"
+1766866904475,SOLUSDT,HOLD,123.64,Not enough data for long MA (30 required)
+1766866904475,SOLUSDT,HOLD,123.64,"Normal volatility (current=0.06, avg=0.06, ratio=1.02x)"
+1766866936052,SOLUSDT,HOLD,123.65,Not enough data for long MA (30 required)
+1766866936052,SOLUSDT,HOLD,123.65,"Normal volatility (current=0.05, avg=0.06, ratio=0.95x)"
+1766866967036,SOLUSDT,HOLD,123.67,First MA calculation
+1766866967036,SOLUSDT,HOLD,123.67,"Normal volatility (current=0.05, avg=0.06, ratio=0.91x)"
+1766866996911,SOLUSDT,SELL,123.66,Bearish crossover (short=123.65 < long=123.66)
+1766866996911,SOLUSDT,HOLD,123.66,"Normal volatility (current=0.05, avg=0.06, ratio=0.90x)"
+1766867025793,SOLUSDT,HOLD,123.66,"No crossover (short=123.64, long=123.66)"
+1766867025793,SOLUSDT,HOLD,123.66,"Normal volatility (current=0.05, avg=0.06, ratio=0.91x)"
+1766867057069,SOLUSDT,HOLD,123.66,"No crossover (short=123.65, long=123.66)"
+1766867057069,SOLUSDT,HOLD,123.66,"Normal volatility (current=0.05, avg=0.06, ratio=0.92x)"
+1766867083706,SOLUSDT,HOLD,123.66,"No crossover (short=123.65, long=123.66)"
+1766867083706,SOLUSDT,HOLD,123.66,"Normal volatility (current=0.05, avg=0.06, ratio=0.92x)"
+1766867117962,SOLUSDT,HOLD,123.73,"No crossover (short=123.66, long=123.67)"
+1766867117962,SOLUSDT,HOLD,123.73,"Normal volatility (current=0.05, avg=0.06, ratio=0.93x)"
+1766867147114,SOLUSDT,BUY,123.73,Bullish crossover (short=123.67 > long=123.67)
+1766867147114,SOLUSDT,HOLD,123.73,"Normal volatility (current=0.05, avg=0.05, ratio=0.94x)"
+1766867177410,SOLUSDT,HOLD,123.73,"No crossover (short=123.68, long=123.67)"
+1766867177410,SOLUSDT,HOLD,123.73,"Normal volatility (current=0.05, avg=0.05, ratio=0.96x)"
