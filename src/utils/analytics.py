@@ -134,8 +134,10 @@ class AnalyticsWorker:
                 analysis.first_trade_time = trade.trade_time
             analysis.ohlc.h = max(trade.price, analysis.ohlc.h)
             analysis.ohlc.l = min(trade.price, analysis.ohlc.l)
-            analysis.ohlc.c = trade.price   # Last price would stay here
-            analysis.last_trade_time = trade.trade_time  # Last trade.trade_time would stay here
+            analysis.ohlc.c = trade.price  # Last price would stay here
+            analysis.last_trade_time = (
+                trade.trade_time
+            )  # Last trade.trade_time would stay here
 
             # Update volume
             if trade.trade_type == "BUY":
@@ -159,15 +161,31 @@ class AnalyticsWorker:
         # Compute remaining metrics after reduce function
         analytics.symbol = self.__symbol
         analytics.price_metrics.range = round(analytics.ohlc.h - analytics.ohlc.l, 8)
-        analytics.price_metrics.std = round(stdev(analytics.prices) if len(analytics.prices) > 1 else 0.0, 8)
-        analytics.price_metrics.change_pct = round(((analytics.ohlc.c - analytics.ohlc.o) / analytics.ohlc.o) * 100, 8)
+        analytics.price_metrics.std = round(
+            stdev(analytics.prices) if len(analytics.prices) > 1 else 0.0, 8
+        )
+        analytics.price_metrics.change_pct = round(
+            ((analytics.ohlc.c - analytics.ohlc.o) / analytics.ohlc.o) * 100, 8
+        )
 
-        analytics.volume.base.total = round(analytics.volume.base.buy + analytics.volume.base.sell, 8)
-        analytics.volume.quote.total = round(analytics.volume.quote.buy + analytics.volume.quote.sell, 8)
+        analytics.volume.base.total = round(
+            analytics.volume.base.buy + analytics.volume.base.sell, 8
+        )
+        analytics.volume.quote.total = round(
+            analytics.volume.quote.buy + analytics.volume.quote.sell, 8
+        )
 
         time_span_ms = analytics.last_trade_time - analytics.first_trade_time
         time_span_sec = time_span_ms / 1000.0 if time_span_ms > 0 else 1.0
-        analytics.activity.trades_per_sec = round(analytics.activity.total_trades / time_span_sec, 3)
-        analytics.activity.buy_sell_ratio = round(analytics.activity.buy_trades / analytics.activity.total_trades, 3)
+        analytics.activity.trades_per_sec = round(
+            analytics.activity.total_trades / time_span_sec, 3
+        )
+        analytics.activity.buy_sell_ratio = round(
+            analytics.activity.buy_trades / analytics.activity.total_trades, 3
+        )
 
-        logger.info(analytics.model_dump_json(exclude={"prices", "last_trade_time", "first_trade_time"}, indent=2))
+        logger.info(
+            analytics.model_dump_json(
+                exclude={"prices", "last_trade_time", "first_trade_time"}, indent=2
+            )
+        )

@@ -39,7 +39,7 @@ class OHLC(BaseModel):
 
     o: float = Field(default=0.0, description="Opening price")
     h: float = Field(default=0.0, description="Highest price")
-    l: float = Field(default=float('inf'), description="Lowest price")
+    l: float = Field(default=float("inf"), description="Lowest price")
     c: float = Field(default=0.0, description="Closing price")
 
 
